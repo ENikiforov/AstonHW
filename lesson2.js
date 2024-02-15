@@ -2,7 +2,6 @@ function getLength(a,b){
 
 }
 
-
 class Node {
     constructor(value) {
         this.value = value;
@@ -23,6 +22,13 @@ function compare(a, b) {
 }
 
 const root1 = new Node(1);
-const root2 = new Node(3);
+root1.left = new Node(2);
+root1.right = new Node(3);
+
+
+const root2 = new Node(1);
+root2.left = new Node(3);
+root2.right = new Node(3);
+
 
 console.log(compare(root1, root2))
