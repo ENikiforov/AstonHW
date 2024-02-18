@@ -3,12 +3,12 @@ function getLength(a) {
         return console.log(a.length);
     } else if (typeof a === 'object' && a !== null) {
         if (typeof a.length === 'number') {
-            return console.log(a.length)
+            return a.length
         } else {
-            return console.log(0)
+            return 0
         }
     } else{
-        return console.log(0)
+        return 0
     }
 }
 
@@ -42,4 +42,4 @@ root2.right = new Node(2);
 
 
 console.log(compare(root1, root2))
-console.log()
+console.log(1.length)
