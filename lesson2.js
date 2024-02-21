@@ -41,5 +41,3 @@ root2.left = new Node(1);
 root2.right = new Node(2);
 
 
-console.log(compare(root1, root2))
-console.log(1.length)
