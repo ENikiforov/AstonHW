@@ -1,3 +1,28 @@
-#!/bin/sh
-COMMIT_MSG_FILE=$1
-python .git/hooks/commit-msg.py "$COMMIT_MSG_FILE"
+#!/usr/bin/env node
+
+const fs = require('fs')
+
+const greenColor = '\x1b[32m'
+const redColor = '\x1b[31m'
+const yellowColor = '\x1b[33m'
+const blueColor = '\x1b[34m'
+const reset = '\x1b[0m'
+
+const pattern = 'ASTONJS-1 [feat/fix/chore]: commit msg';
+const regexp = /^ASTONJS-\d+ \[(feat|fix|chore){1}\]: +/g;
+let exitCode = 0;
+const commitMessageFile = process.argv[2];
+const message = fs.readFileSync(commitMessageFile, 'utf8')
+const isValid = regexp.test(message)
+const errorMessage = `Commit message format must match regex: ${pattern}`
+
+if (isValid) {
+	console.log(`${greenColor} Good commit! ${reset}`)
+} else {
+  console.log(`${redColor} Warning: Bad commit ${blueColor} ${message} ${reset}`)
+	console.log(`${yellowColor} ${errorMessage} ${reset}`)
+	console.log(`${redColor} commit-msg hook failed (add --no-verify to bypass) ${reset}`)
+  exitCode = 1
+}
+
+process.exit(exitCode)
