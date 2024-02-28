@@ -1,0 +1,142 @@
+Index: hooks/commit-msg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hooks/commit-msg b/hooks/commit-msg
+--- a/hooks/commit-msg	
++++ b/hooks/commit-msg	
+@@ -1,3 +1,28 @@
+-#!/bin/sh
+-COMMIT_MSG_FILE=$1
+-python .git/hooks/commit-msg.py "$COMMIT_MSG_FILE"
++#!/usr/bin/env node
++
++const fs = require('fs')
++
++const greenColor = '\x1b[32m'
++const redColor = '\x1b[31m'
++const yellowColor = '\x1b[33m'
++const blueColor = '\x1b[34m'
++const reset = '\x1b[0m'
++
++const pattern = 'ASTONJS-1 [feat/fix/chore]: commit msg'
++const regexp = /^ASTONJS-\d+ \[(feat|fix|chore){1}\]: +/g
++let exitCode = 0;
++const commitMessageFile = process.argv[2];
++const message = fs.readFileSync(commitMessageFile, 'utf8')
++const isValid = regexp.test(message)
++const errorMessage = `Commit message format must match regex: ${pattern}`
++
++if (isValid) {
++	console.log(`${greenColor} Good commit! ${reset}`)
++} else {
++  console.log(`${redColor} Warning: Bad commit ${blueColor} ${message} ${reset}`)
++	console.log(`${yellowColor} ${errorMessage} ${reset}`)
++	console.log(`${redColor} commit-msg hook failed (add --no-verify to bypass) ${reset}`)
++  exitCode = 1
++}
++
++process.exit(exitCode)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,9 +2,9 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="1">
+-      <change afterPath="$PROJECT_DIR$/lesson3.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lesson2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/hooks/commit-msg" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/commit-msg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lesson4.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -19,6 +19,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -55,7 +60,9 @@
+       <workItem from="1708020776260" duration="5393000" />
+       <workItem from="1708275704431" duration="3539000" />
+       <workItem from="1708453231672" duration="4000000" />
+-      <workItem from="1708538325809" duration="622000" />
++      <workItem from="1708538325809" duration="1231000" />
++      <workItem from="1708881943839" duration="5531000" />
++      <workItem from="1709144366177" duration="2226000" />
+     </task>
+     <task id="LOCAL-00001" summary="1">
+       <created>1708024421109</created>
+@@ -85,7 +92,35 @@
+       <option name="project" value="LOCAL" />
+       <updated>1708286056684</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="1">
++      <created>1708538954153</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1708538954153</updated>
++    </task>
++    <task id="LOCAL-00006" summary="1">
++      <created>1708885826937</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1708885826937</updated>
++    </task>
++    <task id="LOCAL-00007" summary="1">
++      <created>1708899503070</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1708899503071</updated>
++    </task>
++    <task id="LOCAL-00008" summary="1">
++      <created>1708899611498</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1708899611498</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -96,7 +131,19 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>

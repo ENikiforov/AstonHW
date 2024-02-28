@@ -1,0 +1,21 @@
+Index: lesson4.js
+===================================================================
+diff --git a/lesson4.js b/lesson4.js
+--- a/lesson4.js	
++++ b/lesson4.js	
+@@ -49,4 +49,14 @@
+     return function (...args){
+         return fn.call(context,...rest.concat(args))
+     }
++}
++
++Function.prototype.newBind2 = function(context, ...args) {
++    const fn = this
++    return function(...params) {
++        context['uniqueKey'] = fn
++        const res = context['uniqueKey'](...args.concat(...params))
++        delete context['uniqueKey']
++        return res
++    }
+ }
+\ No newline at end of file
