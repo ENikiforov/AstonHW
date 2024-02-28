@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/commit-msg" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/commit-msg" afterDir="false" />
-    </list>
+    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [chore]: commitmsg fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
       <workItem from="1708453231672" duration="4000000" />
       <workItem from="1708538325809" duration="1231000" />
       <workItem from="1708881943839" duration="5531000" />
-      <workItem from="1709144366177" duration="2558000" />
+      <workItem from="1709144366177" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1708024421109</created>
@@ -119,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1708899611498</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ASTONJS-1 [chore]: commitmsg fix">
+      <created>1709147093948</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709147093948</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ASTONJS-1 [chore]: commitmsg fix">
+      <created>1709147176571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709147176571</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +147,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feat/homeWork-04" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -150,6 +161,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="ASTONJS-1 [chore]: commit msg fix" />
+    <MESSAGE value="ASTONJS-1 [chore]: commitmsg fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="ASTONJS-1 [chore]: commitmsg fix" />
   </component>
 </project>
