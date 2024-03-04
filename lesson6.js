@@ -16,5 +16,5 @@ const delayFunc = (arr) => {
         return console.log("Массив состоит не из целых чисел")
     }
 }
-console.log(delayFunc(devArr))
+delayFunc(devArr)
 
