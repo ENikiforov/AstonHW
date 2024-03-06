@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [chore]: commitmsg fix">
-      <change afterPath="$PROJECT_DIR$/lesson5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2024_22_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2024_22_58__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2024_22_58__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2024_22_58__Changes_1.xml" afterDir="false" />
+    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [feart]:hw6 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/homeWork-04" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,6 +61,9 @@
       <workItem from="1708538325809" duration="1231000" />
       <workItem from="1708881943839" duration="5531000" />
       <workItem from="1709144366177" duration="2869000" />
+      <workItem from="1709158632403" duration="603000" />
+      <workItem from="1709487667666" duration="4984000" />
+      <workItem from="1709503033263" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1708024421109</created>
@@ -135,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709147176571</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ASTONJS-1 [chore]:done">
+      <created>1709152465360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709152465360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ASTONJS-1 [feart]:hw6 done">
+      <created>1709493540234</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709493540234</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +166,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="feat/homeWork-04" />
                       </list>
                     </value>
                   </entry>
@@ -168,6 +182,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="ASTONJS-1 [chore]: commit msg fix" />
     <MESSAGE value="ASTONJS-1 [chore]: commitmsg fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="ASTONJS-1 [chore]: commitmsg fix" />
+    <MESSAGE value="ASTONJS-1 [chore]:done" />
+    <MESSAGE value="ASTONJS-1 [feart]:hw6 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="ASTONJS-1 [feart]:hw6 done" />
   </component>
 </project>
