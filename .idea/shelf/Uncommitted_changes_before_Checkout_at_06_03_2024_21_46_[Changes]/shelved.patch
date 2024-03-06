@@ -1,0 +1,51 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [feart]:hw6 done">
++    <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [fix]:delayFunc fixed">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -64,6 +64,7 @@
+       <workItem from="1709158632403" duration="603000" />
+       <workItem from="1709487667666" duration="4984000" />
+       <workItem from="1709503033263" duration="10000" />
++      <workItem from="1709566496740" duration="1230000" />
+     </task>
+     <task id="LOCAL-00001" summary="1">
+       <created>1708024421109</created>
+@@ -149,7 +150,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1709493540234</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="ASTONJS-1 [fix]:delayFunc fixed">
++      <created>1709566522700</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1709566522700</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -184,6 +192,7 @@
+     <MESSAGE value="ASTONJS-1 [chore]: commitmsg fix" />
+     <MESSAGE value="ASTONJS-1 [chore]:done" />
+     <MESSAGE value="ASTONJS-1 [feart]:hw6 done" />
+-    <option name="LAST_COMMIT_MESSAGE" value="ASTONJS-1 [feart]:hw6 done" />
++    <MESSAGE value="ASTONJS-1 [fix]:delayFunc fixed" />
++    <option name="LAST_COMMIT_MESSAGE" value="ASTONJS-1 [fix]:delayFunc fixed" />
+   </component>
+ </project>
+\ No newline at end of file
