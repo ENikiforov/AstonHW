@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb0912a-1ef6-45f1-9c22-a991577fe08b" name="Changes" comment="ASTONJS-1 [feart]:hw6 done">
+      <change afterPath="$PROJECT_DIR$/lesson7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feat/homeWork-04" />
+                        <option value="feat/homeWork-07" />
                       </list>
                     </value>
                   </entry>

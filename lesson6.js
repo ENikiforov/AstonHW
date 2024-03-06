@@ -18,3 +18,4 @@ const delayFunc = (arr) => {
 }
 delayFunc(devArr)
 
+
